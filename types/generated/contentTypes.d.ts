@@ -794,6 +794,7 @@ export interface ApiExperienceExperience extends Schema.CollectionType {
     singularName: 'experience';
     pluralName: 'experiences';
     displayName: 'Experience';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -803,7 +804,7 @@ export interface ApiExperienceExperience extends Schema.CollectionType {
     company: Attribute.String;
     dates: Attribute.String;
     logo: Attribute.Media;
-    body: Attribute.String;
+    body: Attribute.Text;
     date: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -884,6 +885,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     deployedLink: Attribute.String;
     githubLink: Attribute.String;
     featured: Attribute.Boolean & Attribute.DefaultTo<false>;
+    video: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

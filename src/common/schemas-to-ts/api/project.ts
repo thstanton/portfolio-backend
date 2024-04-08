@@ -19,6 +19,7 @@ export interface Project {
     deployedLink?: string;
     githubLink?: string;
     featured?: boolean;
+    video?: string;
   };
 }
 export interface Project_Plain {
@@ -31,6 +32,7 @@ export interface Project_Plain {
   deployedLink?: string;
   githubLink?: string;
   featured?: boolean;
+  video?: string;
 }
 
 export interface Project_NoRelations {
@@ -43,6 +45,7 @@ export interface Project_NoRelations {
   deployedLink?: string;
   githubLink?: string;
   featured?: boolean;
+  video?: string;
 }
 
 export interface Project_AdminPanelLifeCycle {
@@ -55,4 +58,5 @@ export interface Project_AdminPanelLifeCycle {
   deployedLink?: string;
   githubLink?: string;
   featured?: boolean;
+  video?: string;
 }

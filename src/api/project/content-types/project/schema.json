@@ -49,6 +49,9 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "video": {
+      "type": "string"
     }
   }
 }
