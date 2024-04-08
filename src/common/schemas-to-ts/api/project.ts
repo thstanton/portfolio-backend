@@ -18,6 +18,7 @@ export interface Project {
     technologies: { data: Technology[] };
     deployedLink?: string;
     githubLink?: string;
+    featured?: boolean;
   };
 }
 export interface Project_Plain {
@@ -29,6 +30,7 @@ export interface Project_Plain {
   technologies: Technology_Plain[];
   deployedLink?: string;
   githubLink?: string;
+  featured?: boolean;
 }
 
 export interface Project_NoRelations {
@@ -40,6 +42,7 @@ export interface Project_NoRelations {
   technologies: number[];
   deployedLink?: string;
   githubLink?: string;
+  featured?: boolean;
 }
 
 export interface Project_AdminPanelLifeCycle {
@@ -51,4 +54,5 @@ export interface Project_AdminPanelLifeCycle {
   technologies: AdminPanelRelationPropertyModification<Technology_Plain>;
   deployedLink?: string;
   githubLink?: string;
+  featured?: boolean;
 }
